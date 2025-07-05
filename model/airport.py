@@ -15,5 +15,8 @@ class Airport:
     def __str__(self):
         return f"{self.AIRPORT}"
 
+    def __repr__(self):
+        return f"{self.ID} - {self.AIRPORT}"
+
     def __hash__(self):
         return hash(self.ID)
